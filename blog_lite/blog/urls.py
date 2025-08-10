@@ -5,7 +5,6 @@ from .views import PostViewSet, SubPostViewSet
 router = DefaultRouter()
 router.register(r'posts', PostViewSet, basename='posts')
 router.register(r'subposts', SubPostViewSet, basename='subposts')
-
 urlpatterns = [
     path('', include(router.urls)),
 ]
